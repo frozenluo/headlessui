@@ -767,9 +767,9 @@ let Input = forwardRefWithAs(function Input<
         // Rollback to original state
         input.value = currentValue
         if (selectionDirection !== null) {
-          input.setSelectionRange(selectionStart, selectionEnd, selectionDirection)
+          input?.setSelectionRange(selectionStart, selectionEnd, selectionDirection)
         } else {
-          input.setSelectionRange(selectionStart, selectionEnd)
+          input?.setSelectionRange(selectionStart, selectionEnd)
         }
       }
     },
